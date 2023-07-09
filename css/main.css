@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -7,13 +8,15 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .main-component {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: auto 20vw;
+  margin: auto 25vw;
+  border-radius: 5px;
 }
 
 .sedan-container,
@@ -27,13 +30,74 @@ body {
 .luxury-container img {
   width: 64px;
   height: 40px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.sedan-container h1,
+.suv-container h1,
+.luxury-container h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.sedan-container p,
+.suv-container p,
+.luxury-container p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.sedan-container .btn,
+.suv-container .btn,
+.luxury-container .btn {
+  background-color: hsl(0, 0%, 95%);
+  margin-left: 30px;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  width: 40%;
+  height: 40px;
+  border: 1px solid hsl(0, 0%, 95%);
+  border-radius: 25px;
+}
+
+.sedan-container {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+.sedan-container .btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-container {
+  background-color: hsl(184, 100%, 22%);
+}
+.suv-container .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-container {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+.luxury-container .btn {
+  color: hsl(179, 100%, 13%);
 }
 
 .attribution {
   font-size: 15px;
   text-align: center;
 }
-
+.attribution p {
+  margin-top: -100px;
+}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */

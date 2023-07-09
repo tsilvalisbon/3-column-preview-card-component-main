@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$para: hsla(0, 0%, 100%, 0.75);
+$light-gray: hsl(0, 0%, 95%);
+
 @mixin flex {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+@mixin margin {
+  margin-top: 25px;
+  margin-left: 30px;
 }

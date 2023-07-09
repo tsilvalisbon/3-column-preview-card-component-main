@@ -7,11 +7,13 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-color: $light-gray;
 }
 
 .main-component {
   @include flex;
-  margin: auto 20vw;
+  margin: auto 25vw;
+  border-radius: 5px;
 }
 
 .sedan-container,
@@ -23,13 +25,74 @@ body {
   img {
     width: 64px;
     height: 40px;
+    @include margin;
+  }
+
+  h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    color: $light-gray;
+    @include margin;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 15px;
+    color: $para;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    @include margin;
+    margin-right: 30px;
+  }
+
+  .btn {
+    background-color: $light-gray;
+    margin-left: 30px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    width: 40%;
+    height: 40px;
+    border: 1px solid $light-gray;
+    border-radius: 25px;
+  }
+}
+
+.sedan-container {
+  background-color: $bright-orange;
+  border-radius: 5px 0 0 5px;
+
+  .btn {
+    color: $bright-orange;
+  }
+}
+
+.suv-container {
+  background-color: $dark-cyan;
+
+  .btn {
+    color: $dark-cyan;
+  }
+}
+
+.luxury-container {
+  background-color: $very-dark-cyan;
+  border-radius: 0 5px 5px 0;
+
+  .btn {
+    color: $very-dark-cyan;
   }
 }
 
 .attribution {
   font-size: 15px;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+  p {
+    margin-top: -100px;
+  }
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
